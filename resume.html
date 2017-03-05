@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding: 0;}
+        ul li{list-style: none}
+        body{background: #778899;}
+        .clearfix{*zoom:1}
+        .clearfix:after{  content: "";  display: block;  clear: both;  }
+
+        #wrap{width: 900px;margin: 0 auto;}
+         .left{width: 300px;float: left;background:#f5f5f5; height: 900px}
+         .right{width: 600px;float:right;height: 900px;background: white}
+         .top_photo{margin-bottom: 10px}
+        .top_photo img{width: 120px;height: 130px;margin: 20px 90px 0;border-radius: 50%;}
+        .top_photo div{width: 300px;text-align: center;margin-top:10px;}
+        .top_photo .name{font-size: 30px;font-weight: normal}
+
+        .section{ margin-left: 12px;}
+        .section .top_msg{ width: 200px;}
+        .section ul{color: #666666;font-size: 15px;width: 200px;padding: 5px 0;}
+        .section ul li{height: 30px;line-height: 30px;width: 200px;}
+        .section li span{ display:inline-block;width: 100px;}
+
+        .section .top_msg,.option .top_msg{color: #4678af;font-size: 20px;border-bottom: 1px solid #c7c7c7;
+            height: 40px;line-height: 40px;}
+
+        .option{padding: 0 20px ;}
+        .option .top_msg{}
+        .option ul{padding-left:10px ; padding-top: 5px;}
+        .option ul li{}
+        .option ul li p{color: #4678af;font-size: 16px;height: 30px;line-height: 30px;}
+        .option ul li span{display:inline-block;font-size: 15px;color: #666;line-height: 24px;height: 24px;}
+
+        .option ol{padding-left:30px ;}
+        .option ol li{font-size: 15px;color: #666;padding: 5px 0;}
+    </style>
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    <div class="left">
+        <div class="top_photo">
+            <img src="img/一寸.jpg" alt="">
+            <div class="name">王佳</div>
+            <div>web前端开发工程师</div>
+        </div>
+        <div class="section message">
+            <div class="top_msg">基本信息</div>
+            <ul>
+                <li><span>姓名：</span><span>王佳</span></li>
+                <li><span>学历：</span><span>本科</span></li>
+                <li><span>毕业年份：</span><span>2016</span></li>
+            </ul>
+        </div>
+        <div class="section phone">
+            <div class="top_msg">联系方式</div>
+            <ul>
+                <li><span>手机：</span><span>15695922706</span></li>
+                <li><span>电子邮箱：</span><span>63981846@163.com</span></li>
+                <li><span>Github：</span><span>github.com/</span></li>
+            </ul>
+        </div>
+        <div class="section communication">
+            <div class="top_msg">教育经历</div>
+            <ul>
+                <li><span>毕业院校：</span><span>武夷学院</span></li>
+                <li><span>专业:</span><span>通信工程</span></li>
+                <li><span>入学时间</span><span>2012.9</span></li>
+                <li><span>毕业时间</span><span>2016.6</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div class="option">
+            <div class="top_msg">在校实践经验及工作经验</div>
+            <ul>
+                <li>
+                    <p>深圳讯方公司Java培训（2015.11）</p>
+                    <span>了解app设计并试编写小程序</span>
+                </li>
+                <li>
+                    <p>厦门若谷网络科技有限公司（2016.3-2016.10）—— 技术支持</p>
+                    <span>负责公司产品的售前设备的搭建安装及网络布设，及售后与客户的沟通维护</span>
+                </li>
+            </ul>
+        </div>
+        <div class="option">
+            <div class="top_msg">专业技能</div>
+            <ol>
+                <li>熟练掌握并运用HTML、CSS技术，对HTML5,CSS3有一定理解，能熟练的对网站进行布局以及网站内容的CSS修饰。对浏览器兼容性问题有一定的认识，比如IE网络请求缓存问题等</li>
+                <li>掌握 JavaScript，对于闭包，原型等有一定的认识。</li>
+                <li>掌握jQuery，能够编写相关代码。</li>
+                <li>掌握Ajax技术，与后端进行数据交互。</li>
+                <li>对于React.js框架的特性以及语法有初步的认识。</li>
+                <li>对前端插件bootstrap等有所了解。</li>
+                <li>能熟练使用Photoshop等图片处理工具。</li>
+            </ol>
+        </div>
+        <div class="option">
+            <div class="top_msg">项目经验</div>
+            <ul>
+                <li>
+                    <p>仿电子商务类型网站首页静态页面</p>
+                    <span>通过设计图分析网站布局，进行模块化布局，对于相应的样式重置，公用样式等进行区域划分。然
+后采用HTML及CSS3相关技术进行静态页面编写。并且考虑不同内核浏览器所对应的兼容性问题。
+例如IE6下，图片格式的兼容问题等。JavaScript方面，页面动态实现，采用了闭包形式即时函数进行编程，有效避免全局变量的污染，且代码管理更加清晰明了。
+                </span>
+                </li>
+                <li>
+                    <p>ajax仿微博登录、验证、注册、留言等功能</p>
+                    <span>通过WampServer建立本地服务器，并且将数据库文件导入相关数据库里。运用封装好的Ajax文件，访问相关的的后端接口文件，根据参数获取相关内容，并在写好的静态页面上编写JavaScript相关代码，实现用户验证、注册、登录、退出等功能，并实现登录留言板功能。</span>
+                </li>
+            </ul>
+        </div>
+        <div class="option">
+            <div class="top_msg">自我评价</div>
+            <ul>
+                <li>
+             <span>学习能力较强，对于新技术可较快上手，注重团队精神和与人沟通的能力培养,吃苦耐劳，能够抗压。</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
